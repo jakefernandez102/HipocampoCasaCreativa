@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HipocampoCasaCreativa</title>
+    <link rel="stylesheet" href="built/css/scss/app.css">
 </head>
+
 <body>
     <header class="header">
-        <picture>
-            <source srcset="" type="image/avif">
-            <source srcset="" type="image/webp">
-            <img loading="lazy" src="" alt="" width="200" height="300">
-         </picture>
-        <div class="nav">
-            <nav class="nav__barra">
-                <ul class="nav__ul"></ul>
-            </nav>
+        <video class="header__videoFondo" muted autoplay loop>
+            <source src="built/img/sea.mp4">
+        </video>
+        <div class="header__capa"></div>
+        <div class="header__contenedor">
+            <div class="header__barra">
+                <div class="nav">
+                    <ul class="nav__lista">
+                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Como trabajamos?</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Servicios</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Equipo</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Experiencia</a></li>
+                    </ul>
+                </div>
+
+                <div class="header__logo">
+                    <picture>
+                        <source srcset="built/img/Caballodemar.avif" type="image/avif">
+                        <source srcset="built/img/Caballodemar.webp" type="image/webp">
+                        <img class="header__logoImagen" loading="lazy" src="built/img/Caballodemar.png" alt="Imagen logo" width="200" height="300">
+                     </picture>
+                </div>
+            </div>
+            <div class="header__contenido">
+                <h1 class="header__heading">Hipocampo</h1>
+                <h2 class="header__heading2"> Casa Creativa</h2>
+                <p class="header__texto">Creemos fielmente en la fuerza e inteligencia del mar para crear emociones con reacciones positivas</p>
+                <h3 class="header__heading3">¡Descubre como fluimos aqui!</h3>
+            </div>
         </div>
+
     </header>
 </body>
+
 </html>
