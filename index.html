@@ -6,44 +6,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HipocampoCasaCreativa</title>
-    <link rel="stylesheet" href="built/css/scss/app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="built/css/app.css">
 </head>
 
 <body>
+    <!-- header -->
     <header class="header">
         <video class="header__videoFondo" muted autoplay loop>
             <source src="built/img/sea.mp4">
         </video>
         <div class="header__capa"></div>
-        <div class="header__contenedor">
-            <div class="header__barra">
-                <div class="nav">
-                    <ul class="nav__lista">
-                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Como trabajamos?</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Servicios</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Equipo</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Experiencia</a></li>
-                    </ul>
-                </div>
-
-                <div class="header__logo">
-                    <picture>
-                        <source srcset="built/img/Caballodemar.avif" type="image/avif">
-                        <source srcset="built/img/Caballodemar.webp" type="image/webp">
-                        <img class="header__logoImagen" loading="lazy" src="built/img/Caballodemar.png" alt="Imagen logo" width="200" height="300">
-                     </picture>
-                </div>
+        <div class="header__barra">
+            <div class="nav ">
+                <ul class="nav__lista">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#trabajamos" class="nav__link">Como trabajamos?</a></li>
+                    <li class="nav__item"><a href="#servicios" class="nav__link">Servicios</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Equipo</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Experiencia</a></li>
+                </ul>
             </div>
+
+            <div class="header__logo">
+                <picture>
+                    <source srcset="built/img/Caballodemar.avif" type="image/avif">
+                    <source srcset="built/img/Caballodemar.webp" type="image/webp">
+                    <img class="header__logoImagen" loading="lazy" src="built/img/Caballodemar.png" alt="Imagen logo"
+                        width="200" height="300">
+                </picture>
+            </div>
+        </div>
+        <div class="header__contenedor">
             <div class="header__contenido">
                 <h1 class="header__heading">Hipocampo</h1>
                 <h2 class="header__heading2"> Casa Creativa</h2>
-                <p class="header__texto">Creemos fielmente en la fuerza e inteligencia del mar para crear emociones con reacciones positivas</p>
+                <p class="header__texto">Creemos fielmente en la fuerza e inteligencia del mar para crear emociones con
+                    reacciones positivas</p>
                 <h3 class="header__heading3">¡Descubre como fluimos aqui!</h3>
             </div>
         </div>
 
     </header>
+    <!-- end header -->
+
+    <!-- seccion como trabajamos -->
+    <section class="trabajamos" id="trabajamos">
+        <div class="trabajamos__contenedor">
+            <div class="trabajamos__contenido">
+                <div class="trabajamos__grid">
+                    <div class="trabajamos__textos">
+                        <h2 class="trabajamos__heading">Como trabajamos?</h2>
+                        <h3 class="trabajamos__heading3">Estrategia</h3>
+                        <h3 class="trabajamos__heading3">Conexión</h3>
+                        <h3 class="trabajamos__heading3">Eficiencia</h3>
+                    </div>
+                    <div class="trabajamos__video">
+                        <video src="built/img/Videopilares.mp4" autoplay muted loop class="video">
+                            <source src="built/img/sea.mp4">
+                        </video>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end seccion como trabajamos -->
+
+    <!-- servicio -->
+    <main class="servicios" id="servicios">
+        <div class="servicios__contenedor">
+            <h1 class="servicios__heading">
+                ¿En qué estás interesado?
+            </h1>
+            <dv class="servicios__contenido">
+                <!-- servicio item -->
+                <div class="servicio">
+                    <div class="servicio__item">
+                        <h2 class="servicio__heading">
+                            Marketing de contenidos
+                        </h2>
+                        <p class="servicio__texto">
+                            Trabajaremos de acuerdo a los objetivos de tu marca para conectarlos con una estrategia que
+                            genere emociones con reacciones positivas.
+                        </p>
+                        <picture>
+                            <source srcset="built/img/Pulpo.avif" type="image/avif">
+                            <source srcset="built/img/Pulpo.webp" type="image/webp">
+                            <img loading="lazy" src="built/img/Pulpo.png" alt="Imagen del pulpo" width="200"
+                                height="300">
+                        </picture>
+                    </div>
+                </div>
+                <!-- end servicio item -->
+
+                <!-- servicio item -->
+                <div class="servicio">
+                    <div class="servicio__item">
+                        <h2 class="servicio__heading">
+                            Social Media Marketing
+                        </h2>
+                        <p class="servicio__texto">
+                            Activaremos y posicionaremos los mensajes que tienes por contar a tu comunidad.
+                        </p>
+                        <picture>
+                            <source srcset="built/img/Delfin.avif" type="image/avif">
+                            <source srcset="built/img/Delfin.webp" type="image/webp">
+                            <img loading="lazy" src="built/img/Delfin.png" alt="Imagen del pulpo" width="200"
+                                height="300">
+                        </picture>
+                    </div>
+                </div>
+                <!-- end servicio item -->
+
+                <!-- servicio item -->
+                <div class="servicio">
+                    <div class="servicio__item">
+                        <h2 class="servicio__heading">
+                            Publicidad Online
+                        </h2>
+                        <p class="servicio__texto">
+                            ¿Vamos por todo? Aumenta tus ventas en los canales correctos gracias al crecimiento de
+                            comunidad de manera orgánica o paga.
+                        </p>
+                        <picture>
+                            <source srcset="built/img/Tiburón.avif" type="image/avif">
+                            <source srcset="built/img/Tiburón.webp" type="image/webp">
+                            <img loading="lazy" src="built/img/Tiburón.png" alt="Imagen del pulpo" width="200"
+                                height="300">
+                        </picture>
+                    </div>
+                </div>
+                <!-- end servicio item -->
+            </dv>
+        </div>
+    </main>
+
+    <!-- end servicio -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
